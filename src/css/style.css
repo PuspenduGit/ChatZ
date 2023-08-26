@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 15px;
+    background-image: linear-gradient(to right, #9600d1, #32d100);
+}
+
+nav{
+    position: relative;
+    margin-top: 2%;
+}
+
+h1{
+    text-align: center;
+    margin: 10px;
+    color: rgb(101, 207, 168)
+}
+
+.logo {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+#send-container{
+    @media screen and (max-width: 600px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    display: block;
+    margin: 10px;
+    text-align: center;
+}
+
+#send-container input{
+    width: 80%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    font-size: 18px;
+}
+
+#send-container button{
+    width: 18%;
+    height: 40px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 2px solid #30de11;
+    padding: 5px;
+    font-size: 18px;
+    background-color: #9600d1;
+    color: #fff;
+}
+
+.container {
+    max-width: 100%;
+    height: 65vh;
+    padding: 8px;
+    background-color: #ffffffcd;
+    border: rgb(18, 200, 12) 2.5px solid;
+    border-radius: 5px;
+    margin-top: 1%;
+    overflow-y: auto;
+}
+
+.message{
+    padding: 5px;
+    background: rgb(240, 248, 255);
+    margin: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 32%;
+}
+
+.client{
+    float: right;
+    clear: both;
+}
+
+.server{
+    float: left;
+    clear: both;
+}

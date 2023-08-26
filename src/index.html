@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatzone - Realtime Chat App</title>
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="js/client.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <img src="../assets/chat.png" alt="ChatZ" class="logo">
+        <h1>
+            ChatZ
+        </h1>
+    </nav>
+    <div class="container"></div>
+    <div class="send">
+        <form action="#" id="send-container" method="post">
+            <input type="text" name="send-message" id="send-message" placeholder="Type your message here..." required>
+            <button type="submit" class="send">Send</button>
+        </form>
+    </div>
+</body>
+</html>
